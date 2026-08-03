@@ -138,6 +138,8 @@ func main() {
 	}
 
 	db := db.NewMemoryStore()
+	clk, err := clockFromEnv()
+	cmd.FailOnError(err, "Reading "+fakeClockEnvVar)
 	ca := ca.New(
 		logger,
 		db,
@@ -147,6 +149,7 @@ func main() {
 		chainLength,
 		profiles,
 		ca.WithSubjectKeyIdentifierHash(subjectKeyIdentifierHash),
+		ca.WithClock(clk),
 	)
 	va := va.New(logger, c.Pebble.HTTPPort, c.Pebble.TLSPort, *strictMode, *resolverAddress, db)
 
