@@ -1,0 +1,24 @@
+ca/ca_test.go
+  s_64ce9bc4fced33::t_86e2bc1cdebc44 11
+  s_64ce9bc4fced33::t_d6a2f1e9e457b5 35
+  s_64ce9bc4fced33::t_c271e38c8c0768 34,36-60
+ca/ca.go
+  s_64ce9bc4fced33::t_2930a35f75f196 79-83,101-102
+  s_64ce9bc4fced33::t_8f6fd2dbf83d66 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e3adc279e06dfeef62f1096c3b132889d89a3233",
+  "prompts": {},
+  "sessions": {
+    "s_64ce9bc4fced33": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "6f7e341f-9164-413f-b0aa-766e7ddcf831",
+        "model": "grok-4.6"
+      },
+      "human_author": "Piotr Zduniak <piotr.zduniak@zoom.us>"
+    }
+  }
+}
